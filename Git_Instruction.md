@@ -200,5 +200,28 @@ GitHub — это крупнейшее хранилище Git репозит
 8. Получите обновлённую ветку master и отправьте её в свой форк.
 
 
+## 18. Создание репазитория
+Для создания нового репозитория необходимо В панели управления справа нажмите кнопку «New repository» или воспользуйтесь кнопкой + на панели инструментов, рядом с вашим именем пользователя как показано на рисунке Выпадающее меню «New repository».
+![Выпадающее меню «New repository»]( new-repo.png)
+
+После того как вы укажите имя репозитория у вас есть два варианта или моздать новый репозиторий или открыть уже существующий.
+
+Создать новый репозиторий можно через команду:
+```
+echo "# attempt_1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/AnastasiaPlotnikova22/attempt_1.git
+git push -u origin main
+```
+
+Уже существующий можно открыь через команду:
+```
+git remote add origin https://github.com/AnastasiaPlotnikova22/attempt_1.git
+git branch -M main
+git push -u origin main
+```
 
 ![Спасибо за внимание!](Thanks.jpeg)
